@@ -3,7 +3,7 @@
 
 Currently its set to a very basic mode, but the funcationality is there (to the most part)
 
-![alt text](https://github.com/EmmHarris343/Python-Pomodoro-Timer/blob/master/example.png?raw=true)
+
 
 
 
