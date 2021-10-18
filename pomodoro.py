@@ -246,10 +246,10 @@ def calcTimePrnt(differnceIn, counterType):
             diffM = divmod(differnceIn.total_seconds(), 60)
             diffS = diffM[1]
             if differnceIn.total_seconds() >= 60:
-                remaingTimeStr = ('%d minutes, %d seconds remainig' % (diffM[0],diffS))
+                remaingTimeStr = ('%d minutes, %d seconds remaining' % (diffM[0],diffS))
                 remaingTimeTitleStr = ('Pomodoro Timer - Focus %d:%d' % (diffM[0],diffS))
             else:
-                remaingTimeStr = ('%d seconds remainig' % (diffS))
+                remaingTimeStr = ('%d seconds remaining' % (diffS))
                 remaingTimeTitleStr = ('Pomodoro Timer - Focus %d:%d' % (diffM[0],diffS))
         if differnceIn.total_seconds() <= 0:
             if sessionCounter >= 4:
@@ -264,10 +264,10 @@ def calcTimePrnt(differnceIn, counterType):
             bdiffM = divmod(differnceIn.total_seconds(), 60)
             bdiffS = bdiffM[1]
             if differnceIn.total_seconds() >= 60: # Show Minutes and Seconds in Time Str / Title
-                remaingTimeStr = ('%d minutes, %d seconds remainig' % (bdiffM[0],bdiffS))
+                remaingTimeStr = ('%d minutes, %d seconds remaining' % (bdiffM[0],bdiffS))
                 remaingTimeTitleStr = ('Pomodoro Timer - Break %d:%d' % (bdiffM[0],bdiffS))
             else:
-                remaingTimeStr = ('%d seconds remainig' % (bdiffS))
+                remaingTimeStr = ('%d seconds remaining' % (bdiffS))
                 remaingTimeTitleStr = ('Pomodoro Timer - Break %d:%d' % (bdiffM[0],bdiffS))
         if differnceIn.total_seconds() <= 0:
             timeoutTimer()
@@ -278,10 +278,10 @@ def calcTimePrnt(differnceIn, counterType):
             bdiffM = divmod(differnceIn.total_seconds(), 60)
             bdiffS = bdiffM[1]
             if differnceIn.total_seconds() >= 60: # Show Minutes and Seconds in Time Str / Title
-                remaingTimeStr = ('%d minutes, %d seconds remainig' % (bdiffM[0],bdiffS))
+                remaingTimeStr = ('%d minutes, %d seconds remaining' % (bdiffM[0],bdiffS))
                 remaingTimeTitleStr = ('Pomodoro Timer - Long Break: %d:%d' % (bdiffM[0],bdiffS))
             else:
-                remaingTimeStr = ('%d seconds remainig' % (bdiffS))
+                remaingTimeStr = ('%d seconds remaining' % (bdiffS))
                 remaingTimeTitleStr = ('Pomodoro Timer - Long Break: %d:%d' % (bdiffM[0],bdiffS))
         if differnceIn.total_seconds() <= 0:
             active_counter = 0
@@ -295,10 +295,10 @@ def calcTimePrnt(differnceIn, counterType):
             bdiffM = divmod(differnceIn.total_seconds(), 60)
             bdiffS = bdiffM[1]
             if differnceIn.total_seconds() >= 60: # Show Minutes and Seconds in Time Str / Title
-                remaingTimeStr = ('%d minutes, %d seconds remainig' % (bdiffM[0],bdiffS))
+                remaingTimeStr = ('%d minutes, %d seconds remaining' % (bdiffM[0],bdiffS))
                 remaingTimeTitleStr = ('Pomodoro Timer - Timeout: %d:%d' % (bdiffM[0],bdiffS))
             else:
-                remaingTimeStr = ('%d seconds remainig' % (bdiffS))
+                remaingTimeStr = ('%d seconds remaining' % (bdiffS))
                 remaingTimeTitleStr = ('Pomodoro Timer - Timeout: %d:%d' % (bdiffM[0],bdiffS))
         if differnceIn.total_seconds() <= 0:
             active_counter = 0
